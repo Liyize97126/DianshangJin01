@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <Button
+        android:id="@+id/butt01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="申请权限"
+        android:textSize="22sp"
+        android:padding="22dp"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/butt02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始扫码"
+        android:textSize="22sp"
+        android:padding="22dp"
+        android:layout_below="@id/butt01"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/butt03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择二维码"
+        android:textSize="22sp"
+        android:padding="22dp"
+        android:layout_below="@id/butt02"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/butt04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="生成二维码"
+        android:textSize="22sp"
+        android:padding="22dp"
+        android:layout_below="@id/butt03"
+        android:layout_marginTop="15dp"/>
+    
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/butt04"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="powered by 一片枫叶"
+        android:gravity="center"/>
+
+</RelativeLayout>
